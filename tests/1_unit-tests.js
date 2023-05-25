@@ -116,8 +116,8 @@ suite('Unit Tests', function () {
     });
     // #12
     test('Array #include, #notInclude', function () {
-      assert.isArray(winterMonths, 'jul', "It's summer in july...");
-      assert.isArray(
+      assert.notInclude(winterMonths, 'jul', "It's summer in july...");
+      assert.include(
         backendLanguages,
         'javascript',
         'JS is a backend language'
